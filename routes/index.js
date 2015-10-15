@@ -7,6 +7,12 @@ router.get('/', function(req, res, next) {
                         message: 'My Portfolio'});
 });
 
+/* GET index page which is the same as home page*/
+router.get('/index', function(req, res, next) {
+  res.render('index', { title: 'FEI WANG',
+                        message: 'My Portfolio'});
+});
+
 /* GET About Me page */
 router.get('/about', function(req, res, next) {
     res.render('about', { title: 'About Me'});
