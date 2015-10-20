@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* POST form will render to success info page */
-router.post('/success', function(req, res, next) {
+router.post('/', function(req, res, next) {
     res.render('success', { title: 'Form Submitted Successfully'});
 });
 
