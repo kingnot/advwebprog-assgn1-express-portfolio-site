@@ -1,3 +1,7 @@
+/*
+ * This file is used to control the views from the index page
+ * and render different views depend on the anchor url
+ */
 var express = require('express');
 var router = express.Router();
 
@@ -26,11 +30,6 @@ router.get('/project', function(req, res, next) {
 /* GET Services page */
 router.get('/service', function(req, res, next) {
     res.render('service', { title: 'Services'});
-});
-
-/* GET Contact page */
-router.get('/contact', function(req, res, next) {
-    res.render('contact', { title: 'Contact Me'});
 });
 
 module.exports = router;
